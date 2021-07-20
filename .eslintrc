@@ -1,0 +1,22 @@
+{
+	"extends": [
+		"eslint:recommended",
+		"plugin:jest/recommended",
+		"plugin:jest/style",
+		"plugin:react/recommended",
+		"plugin:prettier/recommended",
+		"react-app",
+		"react-app/jest",
+		"airbnb-typescript",
+		"react-app/jest"
+	],
+	"parserOptions": {
+		"project": "./tsconfig.json"
+	},
+	"plugins": ["jest", "only-warn"],
+	"rules": {
+		"no-tabs": "off",
+		"react/jsx-indent": "off",
+		"@typescript-eslint/indent": "off"
+	}
+}

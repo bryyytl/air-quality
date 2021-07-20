@@ -1,26 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { createTheme, makeStyles, ThemeProvider } from '@material-ui/core';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import rootTheme from './theme';
+
+import Layout from './layout';
+
+const useStyles = makeStyles({
+	root: {
+		display: 'flex',
+		height: '100%',
+		overflow: 'hidden',
+		width: '100%',
+	},
+});
+
+const App = () => {
+	const classes = useStyles();
+	const theme = createTheme(rootTheme);
+
+	// TODO: Add mediaQuery to allow dark mode system preference to be set
+	// const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)')
+
+	return (
+		<ThemeProvider theme={theme}>
+			<div className={classes.root}>
+				<Layout />
+			</div>
+		</ThemeProvider>
+	);
+};
 
 export default App;
