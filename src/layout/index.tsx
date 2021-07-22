@@ -1,10 +1,10 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core';
+import { makeStyles, Theme } from '@material-ui/core';
 
 import Header from './header';
 import Home from '../views/home';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles((theme: Theme) => ({
 	root: {
 		backgroundColor: theme.palette.background.default,
 		display: 'flex',

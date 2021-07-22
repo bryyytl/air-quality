@@ -1,8 +1,8 @@
 import React from 'react';
-import { AppBar, makeStyles, Toolbar, Typography } from '@material-ui/core';
+import { AppBar, makeStyles, Theme, Toolbar, Typography } from '@material-ui/core';
 import { Cloud } from '@material-ui/icons';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles((theme: Theme) => ({
 	logoContainer: {
 		alignItems: 'center',
 		display: 'flex',

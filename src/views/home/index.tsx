@@ -1,10 +1,10 @@
 import React from 'react';
-import { Typography, makeStyles } from '@material-ui/core';
+import { Typography, makeStyles, Theme } from '@material-ui/core';
 
 import Filters from './filters';
 import Results from './results';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles((theme: Theme) => ({
 	root: {
 		display: 'flex',
 		flex: '1 1 auto',
@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
 		alignItems: 'center',
 		display: 'flex',
 		justifyContent: 'space-between',
-		marginBottom: theme.spacing(1.5),
+		margin: theme.spacing(1.5, 0),
 	},
 }));
 

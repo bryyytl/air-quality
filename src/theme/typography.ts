@@ -7,6 +7,10 @@ const typography = {
 		fontSize: '1.6rem',
 		fontWeight: 550,
 	},
+	h3: {
+		fontSize: '1.5rem',
+		fontWeight: 550,
+	},
 };
 
 export default typography;

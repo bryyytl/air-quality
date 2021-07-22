@@ -1,8 +1,9 @@
 const palette = {
 	background: {
-		// default: '#1a1a1a',
+		default: '#0b0c0e',
 		paper: '#707070',
 	},
+	divider: '#505050',
 	primary: {
 		main: '#50BF34',
 	},
